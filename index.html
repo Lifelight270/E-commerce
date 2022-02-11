@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="css/stylse.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Top-nav-start -->
+    <nav class="top-nav navbar-light bg-light py-3">
+        <div class="container">
+            <div class="row d-flex n-nav">
+                <div class="col-lg-3 col-md-5 col-sm-6 navs">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img src="img/logo.png" alt="">
+                          </h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Product</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Element</a>
+                            </li>
+                          </ul>
+                        </div>
+                     </div>                
+                     <a class="navbar-brand ms-3" href="#">
+                        <img src="img/logo.png" alt="">
+                     </a>
+                </div>
+                <div class="col-lg-6 col-md-2 col-sm-1 f-form d-lg-flex">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" class="forms"name='search' placeholder="Search product">
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-5  b-badge ">
+                    <ul class='d-flex justify-content-evenly'>
+                        <li class="px-3">
+                            <a href="">
+                                <i class="bi bi-shuffle"></i>
+                                <p>Compare</p>
+                            </a>
+                        </li>
+                        <li class="px-3">
+                            <a href="">
+                                <i class="bi bi-heart position-relative"></i>
+                                <span class='badge position-absolute top-0  badge rounded-pill bg-primary'>3</span>
+                                <p>Whishlist</p>
+                            </a>
+                        </li>
+                        <li class="px-3">
+                            <a href="">
+                                <i class="bi bi-cart2 position-relative"></i>
+                                <span class='badge position-absolute top-0 badge rounded-pill bg-primary'>2</span>
+                                <p>Cart</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Top-nav-end -->
+
+    <!-- Second-nav-start -->
+    <nav class="s-nav navbar-expand">
+        <div class="container">
+           <div class="s-menu ms-5 d-flex justify-content-start align-items-center">
+            <div class="browse-cat"> 
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-list"></i>
+                  Browse Categories
+              </a>
+            </div>
+            <div class="m-menu">
+            <ul class="navbar-nav ms-5">
+              <li class="nav-item">
+                <a class="nav-link text-primary" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Element</a>
+              </li>   
+            </ul>
+          </div>
+        </div>
+    </div>
+    </nav>
+    <!-- Second-nav-end -->
+    <!-- owl-carousel-start-->
+    <div class="slide_show py-3">
+      <div class="container">
+        <div class="owl-carousel slideImg">
+          <div class='img-box box1'>
+            <div class="txt-box py-3">
+              <p>Deals and Promotions</p>
+              <h1>Beats by Dre Studio 3</h1>
+              <p class="py-3">
+                <span class="text-dark"><sup><s>$349.95</s></sup></span>
+                <span style="font-size: 40px;"class=""><strong> $279</strong></span><sup>.99</sup>
+              </p>
+              <button type="button" class="btn px-5 py-3 btn-primary">
+                Shop More <i class="bi bi-arrow-right"></i>
+              </button>
+           </div>
+          </div>
+          <div class='img-box box2'>
+            <div class="txt-box2 py-3">
+              <p class="text-primary">New Arrival</p>
+              <h1>Apple ipad Pro 12.9 Inch, 64GB</h1>
+              <p class="py-3">
+                <sup class="text-dark">Today:</sup><span class="text-primary">$999<sup>.99</sup></span></p>
+              <button type="button" class="btn px-5 py-3 btn-primary">
+                Shop More <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+      </div> 
+     </div>
+     </div>
+    <!-- owl-carousel-end -->
+    <!-- Explore Popular Categories-Start -->
+     <div class="E_popular py-5">
+       <div class="container">
+        <div class="row e-popular">
+         <h1 class='text-center py-5'>Explore Popular Categories</h1>
+            <div class= "col-lg-2 col-md-4 col-sm-6 py-3 d-flex align-content-around justify-content-center flex-wrap ">
+              <div class="img-sec">
+                <img src="img/1.png" alt="">
+              </div>
+              <p class=''>Computer & Laptop</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 py-3 d-flex align-content-around justify-content-center flex-wrap">
+              <div class="img-sec">
+               <img src="img/2.png" alt="">
+              </div>
+              <p class=''>Digital Cameras</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 py-3 d-flex align-content-around justify-content-center flex-wrap">
+              <div class="img-sec">
+                <img src="img/3.png" alt="">
+              </div>
+              <p class=''>Smart Phones</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 py-3 d-flex align-content-around justify-content-center flex-wrap">
+              <div class="img-sec">
+                <img src="img/4.png" alt="">
+              </div>
+              <p class=''>Televisions</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 py-3 d-flex align-content-around justify-content-center flex-wrap">
+             <div class="img-sec">
+                <img class=''src="img/5.png" alt="">
+              </div>
+              <p class=''>Audio</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 py-3 d-flex align-content-around justify-content-center flex-wrap">
+              <div class="img-sec">
+                <img src="img/6.png" alt="">
+              </div>
+              <p class=''>Smart Watches</p>
+            </div>
+         </div>
+       </div>
+     </div>
+    <!-- Explore Popular Categories-end -->
+
+    <!-- Offer-banner-Start -->
+    <div class="O_banner">
+      <div class="container">
+       <div class="row banners ">
+         <div class="col-lg-4 banner-box col-md-6 col-sm-12">
+           <a href="">
+             <img src="img/banner-1.png" alt="">
+           </a>
+           <div class="banner-content">
+              <h4>Smart Offer</h4>
+              <h3>
+                <span>Save $150</span>
+                on Samsung Galaxy Note9
+              </h3>
+              <a href="">
+                Shop Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+           </div>
+         </div>
+         <div class="col-lg-4 banner-box col-md-6 col-sm-12">
+          <a href="">
+            <img src="img/banner-2.jpg" alt="">
+          </a>
+           <div class="banner-content">
+              <h4>Time Deals</h4>
+              <h3>
+                Bose SoundSport
+                <span>Time Deal-30%</span>
+              </h3>
+              <a href="">
+                Shop Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+           </div>
+         </div>
+         <div class="col-lg-4 banner-box col-md-6 col-sm-12 last-banner">
+          <a href="">
+            <img src="img/banner-3.png" alt="">
+          </a>
+           <div class="banner-content">
+              <h4>Clearance</h4>
+              <h3>
+                GoPro - Fusion 360
+                <span>Save $70</span>
+              </h3>
+              <a href="">
+                Shop Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+           </div>
+         </div>
+       </div>
+      </div> 
+    </div>
+    <!-- Banner-end -->
+    <!-- New-Arrival-start-->
+    <div class="new-arrival py-3">
+      <div class="container">
+        <div class="row arrival-box">
+          <div class="col-lg-3 text-center a-box">
+            <h2 class="" href="#">New Arrivals</h2>
+          </div>
+          <div class="col-lg-9 a-box">
+            <ul class="">
+              <li class="">
+                <a class="active text-primary
+                " aria-current="page" href="#">ALL</a>
+              </li>
+              <li class="">
+                <a class="" href="#">TV</a>
+              </li>
+              <li class="">
+                <a class="" href="#">Computer</a>
+              </li>
+              <li class="">
+                <a class="" href="#">TABLETS & CELL PHONES</a>
+              </li>
+              <li class="">
+                <a class="" href="#">SMARTWATCHES</a>
+              </li>
+              <li class="">
+                <a class="" href="#">ACCESSORIES</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    
+          
+          <div class="row C-cards">
+              <div class="owl-carousel card-1 ">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Laptops</h5>
+                      <p class=" ">MacBook Pro 13" Display, i5</p>
+                      <span class="text-primary">$1999.9</span>
+                    </div>
+                  </div>
+              
+                
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/product-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Audio</h5>
+                      <p class="card-text">Bose-SoundLink Bluetooth Speaker</p>
+                      <span class="text-primary">$79.9</span>
+                    </div>
+                  </div>
+               
+                
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/product-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tablets</h5>
+                      <p class="card-text">Apple-11 Inch ipad Pro with Wi-Fi 256GB</p>
+                      <span class="text-primary">$899.9</span>
+                    </div>
+                  </div>
+                
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/product-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">CELL Phone</h5>
+                      <p class="card-text">Google - Pixel 3 XL 128GB</p>
+                      <span class="text-primary">$35.41</span>
+                    </div>
+                  </div>
+                
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/product-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">TV & Home Theater</h5>
+                      <p class="card-text">Samsung - 55" Class LED 2160p Smart</p>
+                      <span class="text-primary">$899.9</span>
+                    </div>
+                  </div>
+                
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/product-6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Laptops</h5>
+                      <p class="card-text">MacBook Pro 13" Display, i5</p>
+                      <span class="text-primary">$1999.9</span>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- New-Arrival-end-->
+
+    <!-- Banner-Start -->
+    <div class="B-banner py-3">
+      <div class="container">
+        <div class="banners">
+          <img src="img/camera.png" alt="">
+          <div class="row cta mt-lg-5 mt-sm-3">
+            <div class="col-lg-9 col-md-12 cta-box text-right text-white">
+                <div class="cta-txt">
+                    <p>Shop Today’s Deals
+                    <strong>Awesome Made Easy. HERO7 Black</strong>
+                    </p>
+                </div>
+            </div>
+              <div class="col-lg-3 col-md-12 cta-box text-right">
+                <a href="" class="btn btn-primary">
+                  Shop Now
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+    <!-- Banner-End -->
+    <!-- Recommendation-Start -->
+    <div class="recomend py-5">
+      <div class="container">
+        <div class=" row heading-recommend text-center ">
+          <div class="col-lg-6 ">
+              <h2> Recommendation For You</h2>
+          </div>
+          <div class="col-lg-6  text-lg-right ">
+            <a href="" class="">
+              View All Recommendation
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row recommends py-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 c_card py-3">
+            <div class="">
+              <img src="img/product-10.jpg" class="card-img-top" alt="...">
+              <div class="">
+                <p class="card-title ">Headphones</p>
+                <p class="">
+                  <strong> Beats by Dr.Dre Wireless Headphones</strong>
+                </p>
+                <span class="text-primary">$1999.9</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 c_card py-3">
+            <div class="" >
+              <img src="img/product-11.jpg" class="card-img-top" alt="...">
+              <div class="">
+                <p class="card-title">Cameras & Camcorders</p>
+                <p class="">
+                  <strong> GoPro - HERO7 Black HD Waterproof Action</strong>
+                </p>
+                <span class="text-primary">$1999.9</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 c_card py-3">
+            <div class="" >
+              <img src="img/product-12-2.jpg" class="card-img-top" alt="...">
+              <div class="">
+                <p class="card-title">Smartwatches</p>
+                <p class="">
+                  <strong> Apple - Apple Watch Series 3 with White Sport Band</strong>
+                </p>
+                <span class="text-primary">$1999.9</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 c_card py-3">
+            <div class="" >
+              <img src="img/product-13.jpg" class="card-img-top" alt="...">
+              <div class="">
+                <p class="card-title">Laptops</p>
+                <p class="">
+                  <strong> Lenevo - 330-15IKBR 15.6"</strong>
+                </p>
+                <span class="text-primary">$1999.9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Recommendation-End -->
+
+     <!-- Icon-Box-Start -->
+     <div class="icons py-3">
+       <div class="container">
+         <div class="row b_border py-5">
+           <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+             <div class="icon-box">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <div class="icon-box-content">
+                  <h3 class="icon-box-title">Free Shipping</h3>
+                  <p>Orders $50 or more</p>
+                </div>
+              </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 py-3 ">
+            <div class="icon-box">
+                <i class="fa fa-undo" aria-hidden="true"></i>
+                <div class="icon-box-content">
+                  <h3 class="icon-box-title">Free Returns</h3>
+                  <p>Within 30 days</p>
+                </div>
+              </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 py-3 ">
+            <div class="icon-box">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                <div class="icon-box-content">
+                  <h3 class="icon-box-title">Get 20% Off 1 Item</h3><!-- End .icon-box-title -->
+                  <p>when you sign up</p>
+                </div>
+              </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 py-3 ">
+            <div class="icon-box">
+                <i class="fa fa-life-ring" aria-hidden="true"></i>
+                <div class="icon-box-content">
+                  <h3 class="icon-box-title">We Support</h3><!-- End .icon-box-title -->
+                  <p>24/7 amazing services</p>
+                </div>
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- Icon-Box-End -->
+     <!-- Subscribe-Start -->
+      <div class="sub_1 py-3">
+        <div class="f-form text-center text-white">
+          <h2>Get The Latest Deals</h2>
+          <p>strong and receive $20 coupon for first shopping</p>
+          <input type="text" class="forms"name='search' 
+          placeholder="Enter your Email Address">
+          
+            <a href="" class=" text-right btn btn-primary">
+             Subscribe
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          
+      </div>
+      </div>
+     <!-- Subscribe-End -->
+     <!-- Footer-Start -->
+     <footer class="py-5 footer">
+       <div class="container">
+         <div class="row footers">
+           <div class="col-lg-3 col-md-6 col-sm-12 foot-box py-3 logo-sec">
+             <img src="img/logo.png" alt="">
+             <p class="py-3">Praesent dapibus, neque id cursus ucibus, 
+               tortor neque egestas augue, eu vulputate magna eros eu erat.
+             </p>
+             <div class="border">
+              <i class="bi bi-telephone"></i>
+              <div class="border-text ">
+                <p>Got Question? Call us 24/7</p>
+                <p class="text-primary ">+0123 456 789</p>
+              </div>
+             </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 foot-box py-3">
+             <p><strong>Useful Links</strong></p>
+             <p> About Molla </p>
+             <p>Our Services</p> 
+             <p> How to shop on Molla</p>
+             <p> FAQ</p>
+             <p> Contact us</p>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 foot-box py-3">
+             <p><strong>Customer Service</strong></p>
+             <p>Payment Methods</p>
+             <p>Money-back guarantee!</p>
+             <p>Returns</p>
+             <p>Shipping</p>
+             <p>Terms and conditions</p>
+             <p>Privacy Policy</p>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12 foot-box py-3">
+             <p><strong>My Account</strong></p>
+             <p>Sign In</p>
+             <p>View Cart</p>
+             <p>My Wishlist</p>
+             <p>Track My Order</p>
+             <p>Help</p>
+           </div>
+         </div>
+       </div>
+     </footer>
+
+     <!-- Footer-End -->
+
+
+
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>                  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='js/index.js' >  </script>    
+</body>
+</html>
